@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (md5($password) === $row['u_pass']) {
                 // รหัสผ่านถูกต้อง
                 $_SESSION['u_email'] = $username;
-                header('Location: dirt.php');
+                header('Location: menu.php');
                 exit();
             } else {
                 // รหัสผ่านไม่ถูกต้อง
